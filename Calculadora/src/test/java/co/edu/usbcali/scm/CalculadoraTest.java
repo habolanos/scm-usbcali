@@ -13,10 +13,15 @@ public class CalculadoraTest {
 		c.operacion("resta", 500L, 120L);
 		c.operacion("multi", 90L, 45L);
 		assertTrue(true);
+		c.resultados();
+		assertTrue(true);
 	}
 
 	@Test
 	public void testResultados() {
+		c.operacion("resta", 500L, 120L);
+		c.operacion("resta", 90L, 45L);
+		assertTrue(true);
 		c.resultados();
 		assertTrue(true);
 	}
