@@ -16,6 +16,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '11'
+          distribution: 'adopt' # O 'adopt' si usas adoptOpenJDK, o 'oracle' si deseas la distribución de oracle.
 
       - name: Change to CalculatorApi directory
         run: cd CalculatorApi
