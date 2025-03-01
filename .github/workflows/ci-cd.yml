@@ -41,7 +41,7 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const webhookUrl = process.env.SLACK_WEBHOOK_URL;
+            const webhookUrl = "https://hooks.slack.com/services/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";
             const payload = {
               text: "🚀 *Definir Tag para Despliegue* 🚀\nPor favor, ingresa el tag que deseas usar (por ejemplo, `v1.0.0`). Responde a este mensaje con el tag.",
               attachments: [
