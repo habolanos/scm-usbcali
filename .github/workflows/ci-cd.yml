@@ -18,20 +18,17 @@ jobs:
           java-version: '11'
           distribution: 'adopt' # O 'adopt' si usas adoptOpenJDK, o 'oracle' si deseas la distribución de oracle.
 
-      - name: Change to CalculatorApi directory
-        run: cd CalculatorApi
-
-      - name: List directory
-        run: ls -l
-
       - name: Build with Maven
         run: mvn clean package
+        working-directory: CalculatorApi
 
       - name: Run Unit Tests
         run: mvn test
+        working-directory: CalculatorApi
 
       - name: Run Functional Tests
         run: mvn verify
+        working-directory: CalculatorApi
 
   notify-and-define-tag:
     runs-on: ubuntu-latest
