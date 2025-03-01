@@ -31,7 +31,7 @@ jobs:
         working-directory: CalculatorApi
 
       - name: Debug Slack Webhook URL
-        run: echo "DEBUG Slack Webhook URL: ${{ secrets.SLACK_WEBHOOK_URL }}"
+        run: echo "DEBUG Slack Webhook URL ${{ secrets.SLACK_WEBHOOK_URL }}"
 
   notify-and-define-tag:
     runs-on: ubuntu-latest
