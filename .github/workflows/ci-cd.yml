@@ -135,8 +135,8 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/my-java-api:${{ env.TAG }} .
-          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/my-java-api:${{ env.TAG }}
+          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/CalculatorApi:${{ env.TAG }} .
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/CalculatorApi:${{ env.TAG }}
 
       - name: Deploy to Production
         run: echo "Desplegando en producción..."
